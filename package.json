@@ -1,0 +1,25 @@
+{
+  "name": "offline-syntheser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/text-to-speech": "^3.1.3",
+    "audioconcat": "^0.1.4",
+    "espeak": "0.0.3",
+    "ffmpeg": "0.0.4",
+    "ffmpeg-concat": "^1.3.3",
+    "ffprobe": "^1.1.2",
+    "fluent-ffmpeg": "^2.1.2",
+    "google-tts-api": "^2.0.2",
+    "request": "^2.88.2",
+    "say": "^0.16.0",
+    "telegraf": "^4.3.0",
+    "text2wav": "0.0.13"
+  }
+}
