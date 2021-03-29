@@ -7,13 +7,22 @@ const audioconcat = require('audioconcat');
 const express = require('express')
 const expressApp = express()
 
-const port = process.env.PORT || 3000
-// expressApp.get('/', (req, res) => {
-//   res.send('Hello World!')
+// const port = process.env.PORT || 3000
+// // expressApp.get('/', (req, res) => {
+// //   res.send('Hello World!')
+// // })
+// expressApp.listen(port, () => {
+//   console.log(`Listening on port ${port}`)
 // })
-expressApp.listen(port, () => {
-  console.log(`Listening on port ${port}`)
-})
+
+
+expressApp.listen(process.env.PORT || 8080);
+
+
+// require('https').createServer().listen(process.env.PORT || 5000).on('request', function(req, res){
+//     res.end('')
+//   });
+
 
 bot.command("audio", (ctx) => {
     return ctx.replyWithAudio({ source: "./file.mp3" });
