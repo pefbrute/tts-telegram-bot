@@ -4,6 +4,16 @@ const fs = require('fs');
 const { Telegraf } = require('telegraf');
 const bot = new Telegraf('1743081593:AAHtbW8v9gvq50ifCwrQTokWs66I0wpZB3E')
 const audioconcat = require('audioconcat');
+const express = require('express')
+const expressApp = express()
+
+const port = process.env.PORT || 3000
+// expressApp.get('/', (req, res) => {
+//   res.send('Hello World!')
+// })
+expressApp.listen(port, () => {
+  console.log(`Listening on port ${port}`)
+})
 
 bot.command("audio", (ctx) => {
     return ctx.replyWithAudio({ source: "./file.mp3" });
