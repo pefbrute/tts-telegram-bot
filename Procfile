@@ -1,1 +1,1 @@
-web: node synth.js
+web: npm start
